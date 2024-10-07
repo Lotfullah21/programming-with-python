@@ -1,0 +1,12 @@
+def isSorted(n):
+    i = 1
+    while i<len(n):
+        if n[i]<n[i-1]:
+            return False
+        i+=1
+    return True
+
+
+
+l = [1,2,2,4,5,3,1]
+print(isSorted(l))
