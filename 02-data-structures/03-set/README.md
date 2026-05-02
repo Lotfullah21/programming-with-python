@@ -1,39 +1,23 @@
-## set()
+# Sets
 
-A collection of element which are
+A set stores unique values. Sets are useful for removing duplicates and checking membership quickly.
 
-- Distinct
-- Unordered
-- No indexing
-- Union, intersection and difference are fast
-- Uses hashing internally
-
-We can create sets using a symbol (`{}`) and a function `set()`.
-
-## 1. Symbol {}
-
-Add the element inside `{}` with comma in between them.
-
-```py
-s1 = {1,2,3,4}
+```python
+numbers = {1, 2, 2, 3}
+print(numbers)      # {1, 2, 3}
+print(2 in numbers) # True
 ```
 
-## 2. set()
+## Lessons
 
-Add a collection of element inside `set()`, these collections can be `tuple, list, dictionary.`
+| Lesson | Folder | Main idea |
+| --- | --- | --- |
+| 1 | [01-intro](01-intro/README.md) | Create sets and understand uniqueness |
+| 2 | [02-operations](02-operations/README.md) | Add, remove, union, intersection, and difference |
 
-```py
-s1 = set([1,2,3,4])
-```
+## Important Details
 
-## Empty set
-
-To create an empty set, we cannot use `{}`, because it is used for dictionaries as well, hence we use `set()` function to create an empty dictionary.
-
-```py
-s0 = set()
-print(type(s0))
-
-s0 = {}
-print(s0)
-```
+- Sets are unordered.
+- Sets do not support indexing.
+- Set elements must be hashable, such as strings, numbers, booleans, or tuples.
+- Use `set()` for an empty set. `{}` creates an empty dictionary.

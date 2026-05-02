@@ -1,25 +1,22 @@
-x=2
-def fun():
-    global x
-    x = x +  1
-    print(x)
-fun()
-print(x)
+x = 2
 
 
-x=2
-def fun():
-    global x
-    x = x +  1
-    print(x)
-fun()
-print(x)
+def read_global():
+    print("inside:", x)
 
 
+read_global()
+print("outside:", x)
 
-x=2
-def fun():
-    w = x +  1
-    print(x)
-fun()
-print(x)
+
+count = 2
+
+
+def increment_count():
+    global count
+    count = count + 1
+    print("inside after increment:", count)
+
+
+increment_count()
+print("outside after increment:", count)

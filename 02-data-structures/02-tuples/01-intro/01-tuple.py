@@ -31,5 +31,5 @@ print(tuple_1[1])
 tuple_concatenate = tuple_1 + tuple_mixed
 print("tuple_concatenate =",tuple_concatenate)
 
-# error, we cannot mutate tuples
-# tuple_concatenate[0] = 10 //  error
+# Error: tuples cannot be mutated.
+# tuple_concatenate[0] = 10

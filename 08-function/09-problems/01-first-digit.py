@@ -1,9 +1,11 @@
-a = int(input("Enter a number: "))
+number = int(input("Enter a number: "))
 
 
-def getFirstDigit(a):
-    while a>=10:
-        a=a//10
-    print(a)
+def get_first_digit(value):
+    value = abs(value)
+    while value >= 10:
+        value = value // 10
+    return value
 
-getFirstDigit(a)
+
+print(get_first_digit(number))

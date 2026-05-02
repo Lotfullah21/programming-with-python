@@ -1,6 +1,7 @@
+number = int(input("Enter a number: "))
 total = 1
-n = int(input("Enter a number: "))
-for i in range(1,n+1):
-    total = total * i
-print("factorial =",total)
-    
+
+for value in range(1, number + 1):
+    total = total * value
+
+print("factorial =", total)

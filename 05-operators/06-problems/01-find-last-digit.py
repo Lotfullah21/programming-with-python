@@ -1,11 +1,10 @@
-x = 234
-print("last digit of {x} =", x%10)
+number = 234
+print(f"last digit of {number} =", number % 10)
 
-x = -234
-# for negative numbers, use abs take absolute of the input.
+number = -234
+print(f"last digit of {number} =", abs(number) % 10)
 
-print("last digit of {x} =", abs(x)%10)
+result = (4 * 5) * 5 ** (4 - 2)
+print(result)
 
-
-print((4*5)*5**(4-2))
-print(oct(23)+oct(23))
+print(oct(23))

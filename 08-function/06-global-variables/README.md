@@ -1,54 +1,42 @@
-## global variable
+# Global Variables
 
-- these are variables that are created outside functions or `class`.
-- they are accessible from any where in our code.
+A global variable is created outside a function. A function can read it directly.
 
-```py
-x = 12
-name = "ahmad"
+```python
+x = 2
+
+def show_x():
+    print(x)
+
+show_x()
+```
+
+## Local Variables
+
+A local variable is created inside a function and belongs to that function.
+
+```python
 def total():
     a = 12
     b = 12
-    print(a+b)
+    print(a + b)
 ```
 
-`name` and `x` are global variables.
-`a and b` are local variables.
+`a` and `b` cannot be used outside `total`.
 
-We can access to global variables insider our function and use its value.
+## Changing A Global Variable
 
-```py
-x=2
-def fun():
-    w = x +  1
-    print(x)
-fun()
-print(x)
+To assign a new value to a global variable inside a function, use `global`.
+
+```python
+count = 2
+
+def increment_count():
+    global count
+    count = count + 1
+
+increment_count()
+print(count)  # 3
 ```
 
-To change a global variable inside a function, we need to pass `global var-name` inside the function.
-
-```py
-x=2
-def fun():
-    global x
-    x = x +  1
-    print(x)
-fun()
-print(x)
-```
-
-## local variables
-
-- these are variables defined within a function
-- they are local to that function
-- cannot be accessed outside of that function
-
-```py
-def total():
-    a = 12
-    b = 12
-    print(a+b)
-```
-
-`a and b` are local variables.
+Use global variables carefully. Functions are usually easier to test when they receive values as parameters and return results.

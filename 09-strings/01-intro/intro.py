@@ -16,8 +16,8 @@ print(greeting)
 
 
 
-s1= "C:\project\name.py"
+s1 = "C:\\project\\name.py"
 print(s1)
 
-s1= r"C:\project\name.py"
+s1 = r"C:\project\name.py"
 print(s1)

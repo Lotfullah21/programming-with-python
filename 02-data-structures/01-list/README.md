@@ -1,20 +1,29 @@
-## List []
+# Lists
 
-list is an ordered sequence of data, where its size can be changed as data related to a particular list changes.
+A list stores an ordered collection of values. Lists are mutable, which means you can add, remove, or replace elements after the list is created.
 
-it is an ordered sequence of object types.
-it is also called dynamic array.
+```python
+fruits = ["apple", "banana", "grapes"]
+fruits.append("orange")
+print(fruits[0])      # apple
+print(fruits[-1])     # orange
+```
 
-#### major points
+## Lessons
 
-1. lists are mutable, which imply that the element inside a list can be changed.
-2. mostly, lists contains same kind of data, like strings or integers.
-3. it can also contain mixed kind of data.
+| Order | Folder | Focus |
+| --- | --- | --- |
+| 1 | [01-intro](01-intro/README.md) | Creating lists and mutation |
+| 2 | [02-indexing](02-indexing/README.md) | Accessing values by position |
+| 3 | [03-methods](03-methods/README.md) | Common list methods |
+| 4 | [04-copy](04-copy/README.md) | Copying and slicing |
+| 5 | [05-comprehension](05-comprehension/README.md) | Building lists with expressions |
+| 6 | [06-problems](06-problems) | Practice problems |
+| 7 | [07-practice](07-practice/README.md) | Extra examples from the old list notes |
 
-# Objects
+## Remember
 
-everything in python are objects, and each object has
-
-1. data
-2. operations
-3. functions and methods to play with the object.
+- Indexing returns one value: `fruits[0]`.
+- Slicing returns a new list: `fruits[0:2]`.
+- Assignment through an index mutates the list: `fruits[1] = "pear"`.
+- `append` adds one item; `extend` adds each item from another iterable.

@@ -60,9 +60,9 @@ print(my_list) # Output: [1, 2, 3, 5]
 
 It is a general purpose keyword that can be we used with other collections as well.
 
-```py
-del[index of the element to be removed]
-del[starting index: ending index] // delete all element starting from the given index excluding the end index.
+```python
+del items[index]
+del items[start:end]  # delete from start up to, but not including, end
 ```
 
 ```py
@@ -114,6 +114,6 @@ print(new_list)  # Output: [3, 2, 2, 1, 1]
 
 Some of the methods only works for specific kind of data, for instance
 
-- `list.sum()` will not work if the elements are non-numeric type
-- `list.min()` will not work if we are having mixed data types like `numerics` and `non-numerics`, same goes for `max()` method.
+- `sum(list_name)` works only when the elements are numeric.
+- `min(list_name)` and `max(list_name)` need values that can be compared with each other.
 - `list.sort()` will not work if we are having mixed kind of data, it needs to compare the elements.

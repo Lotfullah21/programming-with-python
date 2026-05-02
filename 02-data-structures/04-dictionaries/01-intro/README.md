@@ -6,7 +6,7 @@ An empty dictionary can be created using `{}`.
 
 The value of a dictionary can be access using its key and by referencing that key, it can be updated as well.
 
-We can create a dictionary using pre defined values
+We can create a dictionary using predefined values.
 
 ```py
 numbers = {1:"1",2:"2",3:"3"}

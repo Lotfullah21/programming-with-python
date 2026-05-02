@@ -1,21 +1,22 @@
-## input()
+# Input
 
-It asks the user for an input.
+`input()` asks the user to type something and press Enter.
 
-by default, the type of input is a string.
+By default, input is always a string.
 
-```py
+```python
 name = input("Enter your name: ")
-print("Hello",name)
+print("Hello", name)
 ```
 
 If the user does not provide an input, the rest of the code will not get executed.
 
-#### Summation with users input
+## Summation With User Input
 
-```py
-# We have to do the type casting here
+Convert input to `int` before doing arithmetic.
+
+```python
 x = int(input("Enter x: "))
 y = int(input("Enter y: "))
-print("sum =",x+y)
+print("sum =", x + y)
 ```

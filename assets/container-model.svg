@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="280" viewBox="0 0 840 280" role="img" aria-labelledby="title desc">
+  <title id="title">Python collection model</title>
+  <desc id="desc">A comparison of lists, tuples, sets, and dictionaries.</desc>
+  <rect width="840" height="280" fill="#f8fafc"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="420" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Choosing A Python Collection</text>
+    <g transform="translate(40 78)">
+      <rect width="170" height="150" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+      <text x="85" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">list</text>
+      <text x="22" y="68" font-size="14" fill="#1e293b">Ordered</text>
+      <text x="22" y="94" font-size="14" fill="#1e293b">Mutable</text>
+      <text x="22" y="120" font-size="14" fill="#1e293b">Allows duplicates</text>
+    </g>
+    <g transform="translate(235 78)">
+      <rect width="170" height="150" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+      <text x="85" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">tuple</text>
+      <text x="22" y="68" font-size="14" fill="#1e293b">Ordered</text>
+      <text x="22" y="94" font-size="14" fill="#1e293b">Immutable</text>
+      <text x="22" y="120" font-size="14" fill="#1e293b">Good for records</text>
+    </g>
+    <g transform="translate(430 78)">
+      <rect width="170" height="150" rx="8" fill="#ffedd5" stroke="#ea580c"/>
+      <text x="85" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#7c2d12">set</text>
+      <text x="22" y="68" font-size="14" fill="#1e293b">Unordered</text>
+      <text x="22" y="94" font-size="14" fill="#1e293b">Unique values</text>
+      <text x="22" y="120" font-size="14" fill="#1e293b">Fast membership</text>
+    </g>
+    <g transform="translate(625 78)">
+      <rect width="170" height="150" rx="8" fill="#f3e8ff" stroke="#7c3aed"/>
+      <text x="85" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4c1d95">dict</text>
+      <text x="22" y="68" font-size="14" fill="#1e293b">Key-value pairs</text>
+      <text x="22" y="94" font-size="14" fill="#1e293b">Unique keys</text>
+      <text x="22" y="120" font-size="14" fill="#1e293b">Lookup by key</text>
+    </g>
+  </g>
+</svg>

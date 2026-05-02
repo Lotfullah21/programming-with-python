@@ -1,23 +1,31 @@
-## Default arguments
+# Default Arguments
 
-We can have predefined values for our function, if the user does not provide any value for that argument, function will use the default argument.
-If the user provides a value instead of default argument, the default argument will be overwritten.
+A default argument gives a parameter a value to use when the caller does not provide one.
 
-```py
-def greeting(greet,name="ahmad"):
+```python
+def greeting(greet, name="Ahmad"):
     print(greet, name)
 
-greeting("salam")
-print("hello", "king")
+greeting("Salam")        # Salam Ahmad
+greeting("Hello", "Ali") # Hello Ali
 ```
 
-### Note
+## Rule
 
-Once, default arguments passed to a function, python expects from us that we pass the default arguments after that, other wise it raises an error.
+Parameters with defaults must come after parameters without defaults.
 
-```py
-def greeting(greet,name="ahmad", age):
-    print(greet, name)
+This works:
+
+```python
+def greeting(greet, name="Ahmad", age=20):
+    print(greet, name, age)
 ```
 
-`age` have been passed after default argument `name`, not acceptable for python, it raises the following error : `SyntaxError: parameter without a default follows parameter with a default`.
+This does not work:
+
+```python
+def greeting(greet, name="Ahmad", age):
+    print(greet, name, age)
+```
+
+Python raises `SyntaxError: parameter without a default follows parameter with a default`.

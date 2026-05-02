@@ -1,7 +1,7 @@
 
 greeting = "hello"
-name="ahmad"
-s = "%s %s welcome to india"%(greeting, name)
+name = "ahmad"
+s = "%s %s welcome to india" % (greeting, name)
 print(s)
 
 

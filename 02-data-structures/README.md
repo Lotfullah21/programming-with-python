@@ -1,53 +1,35 @@
-# 1. Iterable:
+# 02. Data Structures
 
-An iterable is any Python object that can return its elements one at a time, allowing us to loop over it using a for loop.
+Data structures help us keep related values together. Python gives us several built-in collections, and each one is useful for a different kind of problem.
 
-### Key Feature:
+![Choosing a Python collection](../assets/container-model.svg)
 
-It must implement the `__iter__()` method, which returns an iterator. An iterator can then be used to get elements one at a time using the`__next__()` method until the end of the collection is reached.
+## Lessons
 
-Examples of Iterables:
+| Lesson | Folder | Use it when you need |
+| --- | --- | --- |
+| 1 | [01-list](01-list/README.md) | An ordered, changeable sequence |
+| 2 | [02-tuples](02-tuples/README.md) | An ordered sequence that should not change |
+| 3 | [03-set](03-set/README.md) | Unique values and fast membership checks |
+| 4 | [04-dictionaries](04-dictionaries/README.md) | A mapping from keys to values |
 
-- Strings
-- Lists
-- Tuples
-- Dictionaries
-- Sets
-- Generators
-- Files
+## Iterable Vs Sequence
 
-In short, all sequences are iterables, but not all iterables are sequences. For example, sets and dictionaries are iterables but not sequences.
+An **iterable** is any object Python can loop over one item at a time. Lists, tuples, strings, dictionaries, sets, files, and generators are iterable.
 
-### Key methods
+A **sequence** is an iterable with order and indexing. Lists, tuples, and strings are sequences because you can use positions such as `items[0]` or slices such as `items[1:3]`.
 
-` __iter__()`
+## Objects
 
-# 2. Sequence:
+Everything in Python is an object. Each object has:
 
-A sequence is a specific type of iterable that supports indexing and ordering. In other words, elements in a sequence have a specific order, and you can access elements by their position (index) in the sequence.
+- data, such as the values inside a list
+- operations, such as indexing or comparison
+- methods, such as `append`, `split`, or `items`
 
-### Key Features:
+## Quick Choice Guide
 
-- Order is important: The elements have a well-defined order.
-- Supports indexing and slicing: You can access elements using their index (e.g., sequence[0]).
-- Supports iteration: You can loop through sequences as they are also iterables.
-
-Examples of Sequences:
-
-- Strings ("hello")
-- Lists ([1, 2, 3, 4])
-- Tuples ((1, 2, 3))
-
-These objects allow you to access elements using indexes, which is not always possible with all iterables.
-
-### Key methods
-
-`__iter__()`, `__getitem__()`,`__len__()`
-
-# Objects
-
-everything in python are objects, and each object has
-
-1. data
-2. operations
-3. functions and methods to play with the object.
+- Use a `list` when order matters and values may change.
+- Use a `tuple` when order matters and the group should stay fixed.
+- Use a `set` when duplicates should be removed.
+- Use a `dict` when each value has a label or key.

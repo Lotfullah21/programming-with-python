@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+  <title id="title">Python learning path</title>
+  <desc id="desc">A left-to-right path from basics to strings for beginner Python students.</desc>
+  <rect width="960" height="260" fill="#f8fafc"/>
+  <path d="M94 130H866" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(100 130)">
+      <circle r="42" fill="#2563eb"/>
+      <text y="5" fill="#fff" font-size="14" font-weight="700">Basics</text>
+    </g>
+    <g transform="translate(210 130)">
+      <circle r="42" fill="#0f766e"/>
+      <text y="-2" fill="#fff" font-size="13" font-weight="700">Data</text>
+      <text y="15" fill="#fff" font-size="13" font-weight="700">Structures</text>
+    </g>
+    <g transform="translate(320 130)">
+      <circle r="42" fill="#7c3aed"/>
+      <text y="-2" fill="#fff" font-size="13" font-weight="700">Type</text>
+      <text y="15" fill="#fff" font-size="13" font-weight="700">Conversion</text>
+    </g>
+    <g transform="translate(430 130)">
+      <circle r="42" fill="#ea580c"/>
+      <text y="5" fill="#fff" font-size="14" font-weight="700">Input</text>
+    </g>
+    <g transform="translate(540 130)">
+      <circle r="42" fill="#be123c"/>
+      <text y="5" fill="#fff" font-size="14" font-weight="700">Operators</text>
+    </g>
+    <g transform="translate(650 130)">
+      <circle r="42" fill="#4338ca"/>
+      <text y="-2" fill="#fff" font-size="13" font-weight="700">Control</text>
+      <text y="15" fill="#fff" font-size="13" font-weight="700">Flow</text>
+    </g>
+    <g transform="translate(760 130)">
+      <circle r="42" fill="#15803d"/>
+      <text y="5" fill="#fff" font-size="14" font-weight="700">Loops</text>
+    </g>
+    <g transform="translate(870 130)">
+      <circle r="42" fill="#0369a1"/>
+      <text y="-2" fill="#fff" font-size="13" font-weight="700">Functions</text>
+      <text y="15" fill="#fff" font-size="13" font-weight="700">Strings</text>
+    </g>
+  </g>
+  <text x="480" y="48" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#0f172a">Programming With Python: Beginner Path</text>
+  <text x="480" y="220" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#475569">Read, run, change, and explain each example before moving forward.</text>
+</svg>

@@ -1,18 +1,34 @@
-## Control Flow
+# 06. Control Flow
 
-Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a program. We can control the flow of execution by using conditional statements, loops, and other constructs to determine which specific block of code should be executed based on certain conditions.
+Control flow lets a program choose which lines to run.
 
-### Block
+## Lessons
 
-A **block** is a piece of code that is grouped together and treated as a single unit. It has its own environment or scope and is typically indented to visually distinguish it from the surrounding code. In Python, blocks of code are defined by their indentation.
+| Lesson | Folder | Main idea |
+| --- | --- | --- |
+| 1 | [01-if](01-if/README.md) | Run a block only when a condition is true |
+| 2 | [02-if-else](02-if-else/README.md) | Choose between two or more branches |
+| 3 | [03-problems](03-problems/README.md) | Practice decisions with numbers and dates |
 
-Example of a block within a control structure:
+## Basic Pattern
 
 ```python
-a = 5
-if a > 3:
-    # This is a block of code
-    print("a is greater than 3")
-    b = a + 2
-    print(f"b is now {b}")
+temperature = 32
+
+if temperature > 30:
+    print("Hot day")
+else:
+    print("Not too hot")
+```
+
+## Blocks
+
+Python uses indentation to mark a block of code. All statements inside the same block must line up.
+
+```python
+if True:
+    print("inside the block")
+    print("also inside")
+
+print("outside the block")
 ```

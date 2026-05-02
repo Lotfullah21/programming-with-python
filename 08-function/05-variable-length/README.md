@@ -9,13 +9,14 @@ It collects all the elements inside a tuple.
 
 - `*arg(No keyword required)`: Collects extra arguments as a tuple
 
-```py
-t=0
-def sum(*arg):
-    for i in arg:
-        t+=i
-    print(t)
-sum(1,2,3,4,6)
+```python
+def add_all(*numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+print(add_all(1, 2, 3, 4, 6))  # 16
 ```
 
 #### 2. keyword arguments

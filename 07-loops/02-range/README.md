@@ -1,45 +1,37 @@
-## Range
+# Range
 
-It is a function provided by python, it returns a list of integers
+`range` creates an immutable sequence of integers. It does not build a list immediately, but you can convert it to a list when you want to inspect every value.
 
-### 1. range(x)
+## `range(stop)`
 
-It returns a list of numbers starting from `0` up to `x`, but `x` is not included.
+Starts at `0` and stops before `stop`.
 
-```py
+```python
 x = range(5)
-print(x) # range(0, 5)
+print(x)        # range(0, 5)
 print(type(x))  # <class 'range'>
+print(list(x))  # [0, 1, 2, 3, 4]
 ```
 
-range is a different type from other data types like `tuple, list, ... set`, but it is considered a sequent type.
+## `range(start, stop)`
 
-We can use `list` constructor to get a list of numbers.
+Starts at `start` and stops before `stop`.
 
-```py
-x = range(5)
-print(list(x)). # [0, 1, 2, 3, 4]
-```
-
-### 2. range(start,end)
-
-It generates a sequence `[start+1, start+2, start+2,...,end-1]`
-
-```py
+```python
 x = range(1, 5)
-print(list(x)). # [1, 2, 3, 4]
+print(list(x))  # [1, 2, 3, 4]
 ```
 
-```py
+```python
 x = range(-2, 2)
-print(list(x)). # [-2,-1,0,1]
+print(list(x))  # [-2, -1, 0, 1]
 ```
 
-### 3. range(start, end, increment-value)
+## `range(start, stop, step)`
 
-By default, the increment value is 1, but we can add that argument as well.
+Uses `step` as the amount to move each time.
 
-```py
+```python
 x = range(1, 5, 2)
-print(list(x)). # [1, 3]
+print(list(x))  # [1, 3]
 ```

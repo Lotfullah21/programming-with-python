@@ -21,7 +21,7 @@ print(s) #  ----Hello world, Hello india---
 print(s1) #  Hello world, Hello india
 ```
 
-## s.strop("char")
+## s.strip("char")
 
 It removes unwanted characters from both side of a string.
 

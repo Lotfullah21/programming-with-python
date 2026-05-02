@@ -1,23 +1,23 @@
-## Dictionaries
+# Dictionaries
 
-A dictionary is a collection of items which have the following properties
+A dictionary stores key-value pairs. Use a dictionary when each value has a meaningful label.
 
-- collection of key-value pairs
-- unordered
-- all keys must be distinct
-- values maybe repeated
-- uses hashing internally
-- mutable
-
-```PY
-VAR_NAME = {KEY:VALUE}
-VAR_NAME = {KEY1:VALUE1, KEY2:VALUE2}
+```python
+capitals = {"Afghanistan": "Kabul", "India": "New Delhi"}
+print(capitals["Afghanistan"])  # Kabul
 ```
 
-```py
-capitals = {"Afghanistan":"Kabul","India":"New Delhi"}
-```
+## Lessons
 
-dictionaries are one of the most common used data structure which have many real world applications.
-For instance, creating a dictionary of words, where the key is the word and its value is the meaning of that word.
-Another usage of dictionaries would be storing frequency of a value, for instance counting number of votes for a candidate.
+| Lesson | Folder | Main idea |
+| --- | --- | --- |
+| 1 | [01-intro](01-intro/README.md) | Create dictionaries and access values |
+| 2 | [02-methods](02-methods/README.md) | Use common dictionary methods |
+| 3 | [03-practice](03-practice/README.md) | Extra dictionary examples |
+
+## Important Details
+
+- Keys must be unique.
+- Values may repeat.
+- Dictionaries are mutable.
+- Modern Python dictionaries preserve insertion order, but you should still think of them as mappings from keys to values.

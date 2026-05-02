@@ -1,6 +1,8 @@
-x = 1232
-c=0
-while x>0:
-    c+=1
-    x=x//10
-print(c)
+number = 1232
+count = 0
+
+while number > 0:
+    count += 1
+    number = number // 10
+
+print(count)

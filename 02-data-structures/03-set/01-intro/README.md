@@ -16,10 +16,10 @@ Elements in a set should be distinct, when we try to add duplicate elements, set
 
 ```py
 s1 = set([10,10])
-print(s1) // {10}
+print(s1)  # {10}
 
 s2 = {10,10}
-print(s2) // {10}
+print(s2)  # {10}
 ```
 
 ## Using set
